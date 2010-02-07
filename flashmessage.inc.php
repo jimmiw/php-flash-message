@@ -37,8 +37,6 @@ function unsetFlash() {
   if(isset($_SESSION['flash'])) {
     if($_SERVER['REQUEST_URI'] != $_SESSION['flash']['uri']) {
       $_SESSION['flash'] = null;
-      
-      echo "removed all flash messages!";
     }
   }
 }
