@@ -45,6 +45,7 @@ This is done relatively simple as well. Just call the following code on all your
     <?php
     
       // removes used and outdated flash messages.
+      ,0
       unsetFlash();
     
     ?>
