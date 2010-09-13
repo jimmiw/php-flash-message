@@ -27,7 +27,7 @@ function flash($type, $message) {
     $_SESSION['flash']['uri'] = $_SERVER['REQUEST_URI'];
   }
   // sets the message
-  $_SESSION['flash'][$type] = $message;
+  $_SESSION['flash'][$type] .= $message;
 }
 
 /**
